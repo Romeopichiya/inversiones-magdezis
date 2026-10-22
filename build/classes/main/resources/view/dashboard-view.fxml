@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="450.0" prefWidth="650.0" spacing="20.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.com.ms.inversionesmagdezis.controller.DashboardController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    
+    <Label style="-fx-font-size: 22px; -fx-font-weight: bold; -fx-text-fill: #2196F3;" text="Panel Principal - Mis Inversiones" />
+    
+    <TableView fx:id="tablaInversiones" prefHeight="350.0" prefWidth="610.0">
+      <columns>
+        <TableColumn fx:id="colId" prefWidth="50.0" text="ID" />
+        <TableColumn fx:id="colDescripcion" prefWidth="300.0" text="Descripción" />
+        <TableColumn fx:id="colMonto" prefWidth="130.0" text="Monto ($)" />
+        <TableColumn fx:id="colFecha" prefWidth="130.0" text="Fecha" />
+      </columns>
+    </TableView>
+</VBox>
+
